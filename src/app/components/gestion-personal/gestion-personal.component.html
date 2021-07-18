@@ -44,10 +44,10 @@
                       Nombre
                     </th>
                     <th class="text-center">
-                      Apellido Paterno
+                      Apellidos
                     </th>
                     <th class="text-center">
-                      Apellido Materno
+                      Contraseña
                     </th>
                     <th class="text-center">
                       Correo
@@ -66,18 +66,25 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr *ngFor="let personal of gestionPersonalService.personal">
                     <td>
                       1
                     </td>
-                    <td class="text-center">
+                    <td>{{personal.nombre}}</td>
+                    <td>{{personal.apellidos}}</td>
+                    <td>{{personal.password}}</td>
+                    <td>{{personal.correo}}</td>
+                    <td>{{personal.dni}}</td>
+                    <td>{{personal.telefono}}</td>
+                    <td>{{personal.area}}</td>
+                   <!--  <td class="text-center">
                       Jesus
                     </td>
                     <td class="text-center">
                       Sideral
                     </td>
                     <td class="text-center">
-                      Carrión
+                      xxx123
                     </td>
                     <td class="text-center">
                       sideral@gmail.com
@@ -91,19 +98,20 @@
                     <td class="text-center">
                       Ventas
                     </td>
-  
+   -->
                     <td class="project-actions text-right">
                       <!--<a class="btn btn-primary btn-sm" href="#">
                         <i class="fas fa-folder">
                         </i>
                         View
                       </a>-->
-                      <a class="btn btn-info btn-sm" href="#">
+                      
+                      <a (click) ="editPersonal(personal)" class="btn btn-info btn-sm" href="#">
                         <i class="fas fa-pencil-alt">
                         </i>
                         Editar
                       </a>
-                      <a class="btn btn-danger btn-sm" href="#">
+                      <a (click) ="deletPersonal" class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
                         </i>
                         Eliminar
@@ -111,7 +119,7 @@
                     </td>
                   </tr>
   
-                  <tr>
+                  <!-- <tr>
                     <td>
                       2
                     </td>
@@ -122,7 +130,7 @@
                       Perez
                     </td>
                     <td class="text-center">
-                      Torres
+                      xxx100
                     </td>
                     <td class="text-center">
                       luis@gmail.com
@@ -137,14 +145,14 @@
                       Ventas
                     </td>
   
-                    <td class="project-actions text-right">
+                    <td class="project-actions text-right"> -->
                       <!--<a class="btn btn-primary btn-sm" href="#">
                           <i class="fas fa-folder">
                           </i>
                           View
                         </a>-->
                       <!-- cambié el color -->
-                      <a class="btn btn-info btn-sm" href="#">
+                      <!-- <a class="btn btn-info btn-sm" href="#">
                         <i class="fas fa-pencil-alt">
                         </i>
                         Editar
@@ -168,7 +176,7 @@
                       Mamani
                     </td>
                     <td class="text-center">
-                      Gonzales
+                      ccv111
                     </td>
                     <td class="text-center">
                       luisa123@gmail.com
@@ -183,13 +191,13 @@
                       Inventario
                     </td>
   
-                    <td class="project-actions text-right">
+                    <td class="project-actions text-right"> -->
                       <!--<a class="btn btn-primary btn-sm" href="#">
                             <i class="fas fa-folder">
                             </i>
                             View
                           </a>-->
-                      <a class="btn btn-info btn-sm" href="#">
+                      <!-- <a class="btn btn-info btn-sm" href="#">
                         <i class="fas fa-pencil-alt">
                         </i>
                         Editar
@@ -213,7 +221,7 @@
                       Garrido
                     </td>
                     <td class="text-center">
-                      Garcia
+                      cpp452
                     </td>
                     <td class="text-center">
                       mariogar@gmail.com
@@ -228,13 +236,13 @@
                       Ventas
                     </td>
   
-                    <td class="project-actions text-right">
+                    <td class="project-actions text-right"> -->
                       <!--<a class="btn btn-primary btn-sm" href="#">
                               <i class="fas fa-folder">
                               </i>
                               View
                             </a>-->
-                      <a class="btn btn-info btn-sm" href="#">
+                     <!--  <a class="btn btn-info btn-sm" href="#">
                         <i class="fas fa-pencil-alt">
                         </i>
                         Editar
@@ -245,7 +253,7 @@
                         Eliminar
                       </a>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -266,6 +274,12 @@
       <!-- Control sidebar content goes here -->
       <!-- </aside> -->
       <!-- /.control-sidebar -->
+    </div>
+
+    <div class="row" style="width: 99%; margin: 0px auto">
+      <div class="col-12">
+        <a routerLink="/agregar-personal" class="btn btn-success float-right">Crear nuevo usuario</a>
+      </div>
     </div>
     <!-- ./wrapper -->
   

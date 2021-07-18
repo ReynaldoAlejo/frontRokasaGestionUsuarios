@@ -13,6 +13,7 @@ import { VentasComponent } from './components/ventas/ventas.component';
 import { DetalleEntregaComponent } from './components/detalle-entrega/detalle-entrega.component';
 import { DetallesVentasComponent } from './components/detalles-ventas/detalles-ventas.component';
 import { ListaClientesComponent } from './components/lista-clientes/lista-clientes.component';
+import { AgregarPersonalComponent } from "./components/agregar-personal/agregar-personal.component";
 
 const routes: Routes = [
   { path: 'dashboard-admin', component: DashboardAdminComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'agregar-producto', component: AgregarProductoComponent},
   { path: 'reportes', component: ReportesComponent},
   { path: 'personal', component: GestionPersonalComponent},
+  { path: 'agregar-personal', component: AgregarPersonalComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'dashboard-admin' },
   { path: '', component: DashboardAdminComponent}
 ];

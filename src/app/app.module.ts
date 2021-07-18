@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -16,6 +17,7 @@ import { GestionPersonalComponent } from './components/gestion-personal/gestion-
 import { VentasComponent } from './components/ventas/ventas.component';
 import { ListaClientesComponent } from './components/lista-clientes/lista-clientes.component';
 import { DetallesVentasComponent } from './components/detalles-ventas/detalles-ventas.component';
+import { AgregarPersonalComponent } from './components/agregar-personal/agregar-personal.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,14 @@ import { DetallesVentasComponent } from './components/detalles-ventas/detalles-v
     DashboardAdminComponent,
     ReportesComponent,
     ListaClientesComponent,
-    GestionPersonalComponent
+    GestionPersonalComponent,
+    AgregarPersonalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent, SidebarComponent]
