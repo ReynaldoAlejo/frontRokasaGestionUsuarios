@@ -1,0 +1,208 @@
+<div class="card">
+    <div class="card-header">
+      <h3 class="card-title">Pedidos y Entregas</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+
+        <div class="card-btn">
+            <button type="button" class="btn btn-outline-primary btn-block" id="pedidosBtn">
+                Pedidos
+            </button>
+            <button type="button" class="btn btn-outline-primary btn-block" id="entregasBtn">
+                Entregas
+            </button>
+        </div>
+
+      <table id="example2" class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Proveedor</th>
+          <th>Fecha</th>
+          <th>Monto</th>
+          <th>Opción</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+              Felucia Sanchez
+          </td>
+          <td>03/07/21</td>
+          <td> $500</td>
+          <!--CODIGO OPCIONES-->
+          <td class="project-actions text-right">
+            <a class="btn btn-primary btn-sm" (click)="goDetallePedido(1)">
+                <i class="fas fa-folder">
+                </i>
+                View
+            </a>
+            <a class="btn btn-info btn-sm" href="#">
+                <i class="fas fa-pencil-alt">
+                </i>
+                Edit
+            </a>
+            <a class="btn btn-danger btn-sm" href="#">
+                <i class="fas fa-trash">
+                </i>
+                Delete
+            </a>
+        </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            Batman
+          </td>
+          <td>05/07/21</td>
+          <td> $200</td>
+          <!--CODIGO OPCIONES-->
+          <td class="project-actions text-right">
+            <a class="btn btn-primary btn-sm" href="#">
+                <i class="fas fa-folder">
+                </i>
+                View
+            </a>
+            <a class="btn btn-info btn-sm" href="#">
+                <i class="fas fa-pencil-alt">
+                </i>
+                Edit
+            </a>
+            <a class="btn btn-danger btn-sm" href="#">
+                <i class="fas fa-trash">
+                </i>
+                Delete
+            </a>
+        </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                Gecko
+            </td>
+            <td>05/07/21</td>
+            <td> $200</td>
+            <!--CODIGO OPCIONES-->
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="#">
+                  <i class="fas fa-folder">
+                  </i>
+                  View
+              </a>
+              <a class="btn btn-info btn-sm" href="#">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Delete
+              </a>
+          </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+                Gecko
+            </td>
+            <td>05/07/21</td>
+            <td> $200</td>
+            <!--CODIGO OPCIONES-->
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="#">
+                  <i class="fas fa-folder">
+                  </i>
+                  View
+              </a>
+              <a class="btn btn-info btn-sm" href="#">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Delete
+              </a>
+          </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+                Gecko
+            </td>
+            <td>05/07/21</td>
+            <td> $200</td>
+            <!--CODIGO OPCIONES-->
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="#">
+                  <i class="fas fa-folder">
+                  </i>
+                  View
+              </a>
+              <a class="btn btn-info btn-sm" href="#">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Delete
+              </a>
+          </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+                Gecko
+            </td>
+            <td>05/07/21</td>
+            <td> $200</td>
+            <!--CODIGO OPCIONES-->
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="#">
+                  <i class="fas fa-folder">
+                  </i>
+                  View
+              </a>
+              <a class="btn btn-info btn-sm" href="#">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Delete
+              </a>
+          </td>
+          </tr>                    
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <th>#</th>
+          <th>Proveedor</th>
+          <th>Fecha</th>
+          <th>Monto</th>
+          <th>Opción</th>
+        </tr>
+        </tfoot>
+      </table>
+
+      <a routerLink="/crear-pedido" class="btn-crear btn-outline-primary mat-button-toggle ">Crear Pedido</a>
+    </div>
+    <!-- /.card-body -->
+  </div>
+
+
